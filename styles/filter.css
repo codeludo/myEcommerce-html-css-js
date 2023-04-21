@@ -1,0 +1,103 @@
+.filter {
+	display: flex;
+	width: 600px;
+	font-family: "Quicksand";
+	font-style: normal;
+	justify-content: space-around;
+	align-items: center;
+	margin: var(--sm-margin) 0;
+}
+
+.filter input {
+	width: 359px;
+	height: 42px;
+	background: var(--text-input-field);
+	border: none;
+	border-radius: 10px;
+	background-image: url("../icons/search.svg");
+	background-size: 22px;
+	background-repeat: no-repeat;
+	background-position: 11px 11px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	padding-left: 41px;
+	color: var(--dark);
+	outline: none;
+}
+
+.filter-order {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.filter-order select {
+	width: 97px;
+	height: 18px;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	color: var(--light-pink);
+	border: none;
+	background-color: var(--white);
+	outline: none;
+}
+
+.filter-order label {
+	margin-right: var(--sm-margin);
+}
+option {
+	text-align: left;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.mb-categories {
+	display: none;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+@media (max-width: 1022px) {
+	.filter {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		margin: var(--sm-margin) 0 var(--sm-margin) 0;
+	}
+
+	.mb-categories {
+		display: flex;
+		height: 42px;
+		align-items: center;
+		margin: 12px;
+	}
+
+	/* TODO horizontal scrolling efect */
+	/* https://medium.com/geekculture/css-trick-horizontal-scrolling-lists-on-mobile-devices-87312856d679 */
+	.mb-categories ul li a {
+		font-weight: 500;
+		text-decoration: none;
+		color: var(--very-light-pink);
+		border: 1px solid var(--hospital-green);
+		padding: 8px;
+		border-radius: 8px;
+	}
+
+	.mb-categories ul {
+		list-style: none;
+		padding: 0;
+		display: flex;
+		margin: 0;
+		gap: 6px;
+	}
+}
+
