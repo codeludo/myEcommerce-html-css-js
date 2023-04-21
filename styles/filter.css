@@ -3,9 +3,9 @@
 	width: 600px;
 	font-family: "Quicksand";
 	font-style: normal;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	margin: var(--sm-margin) 0;
+	margin: var(--sm-margin) 0 var(--lg-margin) var(--lg-margin);
 }
 
 .filter input {
