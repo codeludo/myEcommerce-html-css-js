@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <img class="icon-close" src="icons/icon_close.png" alt="close">
+    <nav class="navbar">
+			<img class="mb-menu" src="icons/icon_menu.svg" alt="icon_menu" />
+			<div class="navbar-left">
+				<img
+					class="logo-nav"
+					src="img/logo_yard_sale.svg"
+					alt="img_logo"
+				/>
+				<ul>
+					<li>
+						<a href="/">All</a>
+					</li>
+					<li>
+						<a href="/">Clothes</a>
+					</li>
+					<li>
+						<a href="/">Electronics</a>
+					</li>
+					<li>
+						<a href="/">Toys</a>
+					</li>
+					<li>
+						<a href="/">Others</a>
+					</li>
+				</ul>
+			</div>
+			<div class="navbar-right">
+				<ul>
+					<li class="navbar-user">Sign in</li>
+					<li class="navbar-shopping-cart">
+						<img
+							src="./icons/icon_shopping_cart.svg"
+							alt="icon_shopping_cart"
+						/>
+						<div><span>2</span></div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+    <main>
+      <div class="login">
+        <div class="form-container">
+          <img src="img/logo_yard_sale.svg" alt="logo" class="logo" />
+          <form action="/" class="form">
+            <label for="email" class="label">Email address </label>
+            <input
+              type="text"
+              id="email"
+              placeholder="user@email.com"
+              class="input input-password"
+            />
+  
+            <label for="password" class="label">Password: </label>
+            <input
+              type="password"
+              id="password"
+              placeholder="********"
+              class="input input-email"
+            />
+  
+            <input
+              type="submit"
+              value="Log in"
+              class="primary-button login-button"
+            />
+            <!-- TODO forgot my password flow (password recovery) -->
+            <a href="#">Forgot my password</a>
+          </form>
+          <!-- TODO create account (Sign in button functionality) -->
+          <button class="secondary-button">Sign up</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

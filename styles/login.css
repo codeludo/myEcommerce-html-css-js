@@ -1,0 +1,136 @@
+.icon-close {
+	display: none;
+	width: 28px;
+	height: 28px;
+	border-radius: 16px;
+	object-fit: cover;
+    margin:var(--sm-margin) var(--sm-margin) 0 auto;
+}
+
+.login {
+	height: 100vh;
+	display: grid;
+	justify-items: center;
+}
+
+.form-container {
+	display: grid;
+	grid-template-rows: minmax(80px, auto) minmax(319px, auto) minmax(80px, auto);
+	align-items: end;
+	width: 339px;
+}
+
+.logo {
+	width: 150px;
+	justify-self: center;
+	display: none;
+}
+
+.title {
+	height: 23px;
+	font-size: var(--lg);
+	line-height: 23px;
+	margin-bottom: 12px;
+	text-align: center;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 22px;
+	color: var(--black);
+}
+
+.subtitle {
+	color: var(--light-pink);
+	text-align: center;
+	font-style: normal;
+	font-weight: 400;
+	font-size: var(--lg);
+	line-height: 22px;
+	margin-top: 0%;
+	margin-bottom: 32px;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+}
+.form a {
+	color: var(--hospital-green);
+	font-size: var(--sm);
+	text-align: center;
+	text-decoration: none;
+}
+
+.label {
+	height: 20px;
+	line-height: 20px;
+	color: var(--black);
+	font-size: var(--md);
+	font-style: normal;
+	font-weight: 700;
+	margin-bottom: 4px;
+}
+
+.input {
+	background-color: var(--text-input-field);
+	border: 1px;
+	border-color: var(--white);
+	border-radius: 8px;
+	height: 42px;
+	font-size: var(--md);
+	margin-bottom: 16px;
+	padding-left: 8px;
+    outline: none;
+}
+
+.input email {
+	margin-bottom: 22px;
+}
+
+.primary-button {
+	background-color: var(--hospital-green);
+	border: none;
+	border-radius: 10px;
+	color: var(--white);
+	font-weight: bold;
+	font-size: var(--lg);
+	line-height: 23px;
+	text-align: center;
+	height: 69px;
+	cursor: pointer;
+}
+
+.secondary-button {
+	background-color: var(--white);
+	border: 1px solid var(--hospital-green);
+	border-radius: 10px;
+	color: var(--hospital-green);
+	font-weight: bold;
+	font-size: var(--lg);
+	line-height: 23px;
+	text-align: center;
+	height: 69px;
+	cursor: pointer;
+	align-self: center;
+}
+.login-button {
+	margin-top: 14px;
+	margin-bottom: 30px;
+}
+
+@media (max-width: 1022px) {
+	.icon-close {
+		display: block;
+	}
+
+	.logo {
+		display: block;
+	}
+	.secondary-button {
+		margin-bottom: 16px;
+		/* align-self: end; */
+	}
+
+	.navbar {
+		display: none;
+	}
+}
+
